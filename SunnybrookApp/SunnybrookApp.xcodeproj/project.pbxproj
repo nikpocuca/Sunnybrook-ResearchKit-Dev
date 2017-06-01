@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		526531C21EDA546F00DE290F /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526531C11EDA546F00DE290F /* DashboardTableViewController.swift */; };
+		526531C41EDA5AAF00DE290F /* Dash_v2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526531C31EDA5AAF00DE290F /* Dash_v2ViewController.swift */; };
+		52ADC2481EDDC0DA00D0BD78 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADC2471EDDC0DA00D0BD78 /* DataSource.swift */; };
+		52ADC2511EDF07BB00D0BD78 /* SunnybrookTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADC2501EDF07BB00D0BD78 /* SunnybrookTabBarController.swift */; };
+		52CB45241ED8619C005C54DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB45231ED8619C005C54DE /* AppDelegate.swift */; };
+		52CB45261ED8619C005C54DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB45251ED8619C005C54DE /* ViewController.swift */; };
+		52CB45291ED8619C005C54DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CB45271ED8619C005C54DE /* Main.storyboard */; };
+		52CB452B1ED8619C005C54DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CB452A1ED8619C005C54DE /* Assets.xcassets */; };
+		52CB452E1ED8619C005C54DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CB452C1ED8619C005C54DE /* LaunchScreen.storyboard */; };
+		52CB45891ED878DA005C54DE /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CB45861ED878A9005C54DE /* ResearchKit.framework */; };
+		52CB458A1ED878DA005C54DE /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52CB45861ED878A9005C54DE /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52CB45931ED87B24005C54DE /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB45911ED87B24005C54DE /* ConsentDocument.swift */; };
+		52CB45941ED87B24005C54DE /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB45921ED87B24005C54DE /* ConsentTask.swift */; };
+		52CB45A81ED881D1005C54DE /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB45A71ED881D1005C54DE /* SurveyTask.swift */; };
+		52CB45AA1ED8836C005C54DE /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB45A91ED8836C005C54DE /* SurveyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52CB45851ED878A9005C54DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CB457F1ED878A9005C54DE /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		52CB45871ED878A9005C54DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CB457F1ED878A9005C54DE /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		52CB458B1ED878DA005C54DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CB457F1ED878A9005C54DE /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52CB458D1ED878DA005C54DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				52CB458A1ED878DA005C54DE /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		526531C11EDA546F00DE290F /* DashboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardTableViewController.swift; path = "../../../Documents/Dev/myHealthApp/MyHealthyPrototype-master /MyHealthPrototype/DashboardTableViewController.swift"; sourceTree = "<group>"; };
+		526531C31EDA5AAF00DE290F /* Dash_v2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dash_v2ViewController.swift; sourceTree = "<group>"; };
+		52ADC2471EDDC0DA00D0BD78 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		52ADC2501EDF07BB00D0BD78 /* SunnybrookTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunnybrookTabBarController.swift; sourceTree = "<group>"; };
+		52CB45201ED8619C005C54DE /* SunnybrookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnybrookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CB45231ED8619C005C54DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52CB45251ED8619C005C54DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52CB45281ED8619C005C54DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52CB452A1ED8619C005C54DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52CB452D1ED8619C005C54DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52CB452F1ED8619C005C54DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CB457F1ED878A9005C54DE /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Documents/Dev/iOS_Swift_kits/Kits/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		52CB45911ED87B24005C54DE /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentDocument.swift; path = ../../../Documents/Dev/researchkitbasic/researchkitbasic/ConsentDocument.swift; sourceTree = "<group>"; };
+		52CB45921ED87B24005C54DE /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentTask.swift; path = ../../../Documents/Dev/researchkitbasic/researchkitbasic/ConsentTask.swift; sourceTree = "<group>"; };
+		52CB45A71ED881D1005C54DE /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		52CB45A91ED8836C005C54DE /* SurveyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52CB451D1ED8619C005C54DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CB45891ED878DA005C54DE /* ResearchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52CB45171ED8619C005C54DE = {
+			isa = PBXGroup;
+			children = (
+				52CB457F1ED878A9005C54DE /* ResearchKit.xcodeproj */,
+				52CB45221ED8619C005C54DE /* SunnybrookApp */,
+				52CB45211ED8619C005C54DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52CB45211ED8619C005C54DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CB45201ED8619C005C54DE /* SunnybrookApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52CB45221ED8619C005C54DE /* SunnybrookApp */ = {
+			isa = PBXGroup;
+			children = (
+				52CB45231ED8619C005C54DE /* AppDelegate.swift */,
+				52CB45251ED8619C005C54DE /* ViewController.swift */,
+				52CB45271ED8619C005C54DE /* Main.storyboard */,
+				52CB452A1ED8619C005C54DE /* Assets.xcassets */,
+				52CB45A61ED881BE005C54DE /* Survey */,
+				52CB452C1ED8619C005C54DE /* LaunchScreen.storyboard */,
+				52CB452F1ED8619C005C54DE /* Info.plist */,
+				52CB459F1ED880EB005C54DE /* Dashboard */,
+				52CB454B1ED87415005C54DE /* Consent */,
+			);
+			path = SunnybrookApp;
+			sourceTree = "<group>";
+		};
+		52CB454B1ED87415005C54DE /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				52CB45911ED87B24005C54DE /* ConsentDocument.swift */,
+				52CB45921ED87B24005C54DE /* ConsentTask.swift */,
+			);
+			name = Consent;
+			sourceTree = "<group>";
+		};
+		52CB45801ED878A9005C54DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CB45861ED878A9005C54DE /* ResearchKit.framework */,
+				52CB45881ED878A9005C54DE /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52CB459F1ED880EB005C54DE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				526531C11EDA546F00DE290F /* DashboardTableViewController.swift */,
+				526531C31EDA5AAF00DE290F /* Dash_v2ViewController.swift */,
+				52ADC2501EDF07BB00D0BD78 /* SunnybrookTabBarController.swift */,
+				52ADC2471EDDC0DA00D0BD78 /* DataSource.swift */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		52CB45A61ED881BE005C54DE /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				52CB45A71ED881D1005C54DE /* SurveyTask.swift */,
+				52CB45A91ED8836C005C54DE /* SurveyView.swift */,
+			);
+			name = Survey;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52CB451F1ED8619C005C54DE /* SunnybrookApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CB45321ED8619C005C54DE /* Build configuration list for PBXNativeTarget "SunnybrookApp" */;
+			buildPhases = (
+				52CB451C1ED8619C005C54DE /* Sources */,
+				52CB451D1ED8619C005C54DE /* Frameworks */,
+				52CB451E1ED8619C005C54DE /* Resources */,
+				52CB458D1ED878DA005C54DE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CB458C1ED878DA005C54DE /* PBXTargetDependency */,
+			);
+			name = SunnybrookApp;
+			productName = SunnybrookApp;
+			productReference = 52CB45201ED8619C005C54DE /* SunnybrookApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52CB45181ED8619C005C54DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nik Pocuca";
+				TargetAttributes = {
+					52CB451F1ED8619C005C54DE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 25W8SY99Z3;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 52CB451B1ED8619C005C54DE /* Build configuration list for PBXProject "SunnybrookApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52CB45171ED8619C005C54DE;
+			productRefGroup = 52CB45211ED8619C005C54DE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52CB45801ED878A9005C54DE /* Products */;
+					ProjectRef = 52CB457F1ED878A9005C54DE /* ResearchKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				52CB451F1ED8619C005C54DE /* SunnybrookApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		52CB45861ED878A9005C54DE /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 52CB45851ED878A9005C54DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52CB45881ED878A9005C54DE /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 52CB45871ED878A9005C54DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52CB451E1ED8619C005C54DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CB452E1ED8619C005C54DE /* LaunchScreen.storyboard in Resources */,
+				52CB452B1ED8619C005C54DE /* Assets.xcassets in Resources */,
+				52CB45291ED8619C005C54DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52CB451C1ED8619C005C54DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CB45261ED8619C005C54DE /* ViewController.swift in Sources */,
+				52CB45941ED87B24005C54DE /* ConsentTask.swift in Sources */,
+				52CB45AA1ED8836C005C54DE /* SurveyView.swift in Sources */,
+				52ADC2481EDDC0DA00D0BD78 /* DataSource.swift in Sources */,
+				526531C21EDA546F00DE290F /* DashboardTableViewController.swift in Sources */,
+				526531C41EDA5AAF00DE290F /* Dash_v2ViewController.swift in Sources */,
+				52ADC2511EDF07BB00D0BD78 /* SunnybrookTabBarController.swift in Sources */,
+				52CB45A81ED881D1005C54DE /* SurveyTask.swift in Sources */,
+				52CB45931ED87B24005C54DE /* ConsentDocument.swift in Sources */,
+				52CB45241ED8619C005C54DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52CB458C1ED878DA005C54DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 52CB458B1ED878DA005C54DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52CB45271ED8619C005C54DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CB45281ED8619C005C54DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52CB452C1ED8619C005C54DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CB452D1ED8619C005C54DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52CB45301ED8619C005C54DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52CB45311ED8619C005C54DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52CB45331ED8619C005C54DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 25W8SY99Z3;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/nikpocuca/Documents/Dev/iOS_Swift_kits/Kits/**";
+				INFOPLIST_FILE = SunnybrookApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SRI.SunnybrookApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		52CB45341ED8619C005C54DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 25W8SY99Z3;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/nikpocuca/Documents/Dev/iOS_Swift_kits/Kits/**";
+				INFOPLIST_FILE = SunnybrookApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SRI.SunnybrookApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52CB451B1ED8619C005C54DE /* Build configuration list for PBXProject "SunnybrookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CB45301ED8619C005C54DE /* Debug */,
+				52CB45311ED8619C005C54DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CB45321ED8619C005C54DE /* Build configuration list for PBXNativeTarget "SunnybrookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CB45331ED8619C005C54DE /* Debug */,
+				52CB45341ED8619C005C54DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52CB45181ED8619C005C54DE /* Project object */;
+}
