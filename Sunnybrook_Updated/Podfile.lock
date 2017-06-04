@@ -1,0 +1,15 @@
+PODS:
+  - FaveButton (2.0.3)
+  - ResearchKit (1.4.1)
+
+DEPENDENCIES:
+  - FaveButton
+  - ResearchKit
+
+SPEC CHECKSUMS:
+  FaveButton: cfcbc5e73da159c4f916613da5687357b5bb4783
+  ResearchKit: 3533ea3a2270e4ed7ff830e19755dc959fdfd430
+
+PODFILE CHECKSUM: 3d27c05bad9657a56c2f8a52312a90f8b584e93f
+
+COCOAPODS: 1.2.1

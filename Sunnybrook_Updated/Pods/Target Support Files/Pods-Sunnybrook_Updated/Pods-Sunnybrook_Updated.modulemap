@@ -1,0 +1,6 @@
+framework module Pods_Sunnybrook_Updated {
+  umbrella header "Pods-Sunnybrook_Updated-umbrella.h"
+
+  export *
+  module * { export * }
+}
