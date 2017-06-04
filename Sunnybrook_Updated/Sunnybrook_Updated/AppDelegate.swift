@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  SunnybrookApp
+//  Sunnybrook_Updated
 //
-//  Created by Nik Pocuca on 2017-05-26.
+//  Created by Nik Pocuca on 2017-06-04.
 //  Copyright © 2017 Nik Pocuca. All rights reserved.
 //
 
 import UIKit
-import ResearchKit
 
 
 @UIApplicationMain
@@ -15,8 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -44,7 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    
 
 }
 

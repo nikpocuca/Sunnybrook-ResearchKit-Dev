@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SunnybrookApp.xcscheme</key>
+		<key>Sunnybrook_Updated.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>52CB451F1ED8619C005C54DE</key>
+		<key>52C8E76F1EE4AA96005DBED2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

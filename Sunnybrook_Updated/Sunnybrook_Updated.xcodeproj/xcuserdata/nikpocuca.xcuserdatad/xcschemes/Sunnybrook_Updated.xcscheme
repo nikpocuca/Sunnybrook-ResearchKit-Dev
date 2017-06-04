@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52CB451F1ED8619C005C54DE"
-               BuildableName = "SunnybrookApp.app"
-               BlueprintName = "SunnybrookApp"
-               ReferencedContainer = "container:SunnybrookApp.xcodeproj">
+               BlueprintIdentifier = "52C8E76F1EE4AA96005DBED2"
+               BuildableName = "Sunnybrook_Updated.app"
+               BlueprintName = "Sunnybrook_Updated"
+               ReferencedContainer = "container:Sunnybrook_Updated.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52CB451F1ED8619C005C54DE"
-            BuildableName = "SunnybrookApp.app"
-            BlueprintName = "SunnybrookApp"
-            ReferencedContainer = "container:SunnybrookApp.xcodeproj">
+            BlueprintIdentifier = "52C8E76F1EE4AA96005DBED2"
+            BuildableName = "Sunnybrook_Updated.app"
+            BlueprintName = "Sunnybrook_Updated"
+            ReferencedContainer = "container:Sunnybrook_Updated.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52CB451F1ED8619C005C54DE"
-            BuildableName = "SunnybrookApp.app"
-            BlueprintName = "SunnybrookApp"
-            ReferencedContainer = "container:SunnybrookApp.xcodeproj">
+            BlueprintIdentifier = "52C8E76F1EE4AA96005DBED2"
+            BuildableName = "Sunnybrook_Updated.app"
+            BlueprintName = "Sunnybrook_Updated"
+            ReferencedContainer = "container:Sunnybrook_Updated.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52CB451F1ED8619C005C54DE"
-            BuildableName = "SunnybrookApp.app"
-            BlueprintName = "SunnybrookApp"
-            ReferencedContainer = "container:SunnybrookApp.xcodeproj">
+            BlueprintIdentifier = "52C8E76F1EE4AA96005DBED2"
+            BuildableName = "Sunnybrook_Updated.app"
+            BlueprintName = "Sunnybrook_Updated"
+            ReferencedContainer = "container:Sunnybrook_Updated.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
