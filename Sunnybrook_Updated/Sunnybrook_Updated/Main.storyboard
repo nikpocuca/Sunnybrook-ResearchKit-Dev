@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunnybrookApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sunnybrook_Updated" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -60,7 +60,7 @@
         <!--Dashboard-->
         <scene sceneID="4Vi-cf-SiX">
             <objects>
-                <viewController id="bai-4f-V8R" customClass="Dash_v2" customModule="SunnybrookApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bai-4f-V8R" customClass="Dash_v2" customModule="Sunnybrook_Updated" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D6g-yq-DfG"/>
                         <viewControllerLayoutGuide type="bottom" id="Pp4-kO-UMv"/>
@@ -83,6 +83,14 @@
                                     <tabBarItem title="Review" image="review" id="AhT-K4-Uby"/>
                                 </items>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26E-HG-RZh" customClass="FaveButton" customModule="FaveButton">
+                                <rect key="frame" x="135" y="468" width="106" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="red"/>
+                                <connections>
+                                    <action selector="update:" destination="bai-4f-V8R" eventType="touchDown" id="y4j-gO-ETm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -98,7 +106,7 @@
         <!--Sunnybrook Tab Bar Controller-->
         <scene sceneID="Yhp-hm-ncn">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EZK-Aq-wYw" customClass="SunnybrookTabBarController" customModule="SunnybrookApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EZK-Aq-wYw" customClass="SunnybrookTabBarController" customModule="Sunnybrook_Updated" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="6Yb-md-fGR">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -118,7 +126,7 @@
         <!--Activities-->
         <scene sceneID="49w-dZ-war">
             <objects>
-                <viewController id="QKc-L6-mIc" customClass="Survey" customModule="SunnybrookApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QKc-L6-mIc" customClass="Survey" customModule="Sunnybrook_Updated" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i8O-hm-uy0"/>
                         <viewControllerLayoutGuide type="bottom" id="4me-TN-OCS"/>
@@ -165,6 +173,7 @@
         <image name="activities-2" width="32" height="32"/>
         <image name="dash-1" width="35" height="35"/>
         <image name="mitylogov2" width="296" height="90"/>
+        <image name="red" width="106" height="106"/>
         <image name="review" width="25" height="25"/>
         <image name="title" width="561" height="179"/>
     </resources>

@@ -73,13 +73,30 @@ extension Survey : ORKTaskViewControllerDelegate {
                     let stepFirstResult = stepResults.first,
                     let textResult = stepFirstResult as? ORKChoiceQuestionResult,
                     let textAnswer = textResult.choiceAnswers {
-                    let input =  "\(textAnswer)"
+                    var input =  "\(textAnswer)"
                     data += [input]
           }
          }
         }
         
-        print("Data: \(data)")
+        let method = [[0,1,2,4],[0,1,2,4],[0,1,2,3,4],[0,1,2,3,4]]
+
+        
+       var parsed_data = Parse(input: data)
+       var scored_data = Scorer(input: parsed_data, Method: method)
+        
+        
+        print(parsed_data)
+        print(scored_data)
+        
+        
+        sqlFunction(id: 7, Name: "Nik", score: scored_data)
+        
+        
+        
+        
+        
+       // print("Data: \(data)")
        // end of for statement
             
             

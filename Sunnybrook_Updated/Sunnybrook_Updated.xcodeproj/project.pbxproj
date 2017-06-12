@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521EAF221EEACC0300FE2B12 /* sqlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521EAF211EEACC0300FE2B12 /* sqlFunction.swift */; };
 		52C8E7741EE4AA96005DBED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8E7731EE4AA96005DBED2 /* AppDelegate.swift */; };
 		52C8E77B1EE4AA96005DBED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C8E77A1EE4AA96005DBED2 /* Assets.xcassets */; };
 		52C8E77E1EE4AA96005DBED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C8E77C1EE4AA96005DBED2 /* LaunchScreen.storyboard */; };
@@ -17,11 +18,13 @@
 		52C8E7911EE4AC00005DBED2 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8E78F1EE4AC00005DBED2 /* SurveyView.swift */; };
 		52E1CE021EE4AC5B00467DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E1CE011EE4AC5B00467DFC /* Main.storyboard */; };
 		52E1CE071EE4AC8D00467DFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1CE061EE4AC8D00467DFC /* ViewController.swift */; };
+		52E1CE0A1EE4B67D00467DFC /* parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1CE091EE4B67D00467DFC /* parse.swift */; };
 		B30972E816962EB4D72B9A82 /* Pods_Sunnybrook_Updated.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07DB61B84413622C9888E69 /* Pods_Sunnybrook_Updated.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00C77FAE6108534D4BDD5F58 /* Pods-Sunnybrook_Updated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sunnybrook_Updated.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sunnybrook_Updated/Pods-Sunnybrook_Updated.release.xcconfig"; sourceTree = "<group>"; };
+		521EAF211EEACC0300FE2B12 /* sqlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sqlFunction.swift; sourceTree = "<group>"; };
 		52C8E7701EE4AA96005DBED2 /* Sunnybrook_Updated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunnybrook_Updated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8E7731EE4AA96005DBED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C8E77A1EE4AA96005DBED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		52C8E78F1EE4AC00005DBED2 /* SurveyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
 		52E1CE011EE4AC5B00467DFC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		52E1CE061EE4AC8D00467DFC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52E1CE091EE4B67D00467DFC /* parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parse.swift; sourceTree = "<group>"; };
 		8A86F28FE34EFBD2976EB325 /* Pods-Sunnybrook_Updated.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sunnybrook_Updated.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sunnybrook_Updated/Pods-Sunnybrook_Updated.debug.xcconfig"; sourceTree = "<group>"; };
 		E07DB61B84413622C9888E69 /* Pods_Sunnybrook_Updated.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sunnybrook_Updated.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,6 +60,14 @@
 				E07DB61B84413622C9888E69 /* Pods_Sunnybrook_Updated.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		521EAF201EEACBE800FE2B12 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				521EAF211EEACC0300FE2B12 /* sqlFunction.swift */,
+			);
+			name = SQL;
 			sourceTree = "<group>";
 		};
 		52C8E7671EE4AA96005DBED2 = {
@@ -82,11 +94,12 @@
 				52C8E7731EE4AA96005DBED2 /* AppDelegate.swift */,
 				52E1CE011EE4AC5B00467DFC /* Main.storyboard */,
 				52C8E77A1EE4AA96005DBED2 /* Assets.xcassets */,
-				52E1CE061EE4AC8D00467DFC /* ViewController.swift */,
+				521EAF201EEACBE800FE2B12 /* SQL */,
 				52C8E7921EE4AC05005DBED2 /* Survey */,
 				52C8E7871EE4ABD8005DBED2 /* DashBoard */,
 				52C8E77C1EE4AA96005DBED2 /* LaunchScreen.storyboard */,
 				52C8E77F1EE4AA96005DBED2 /* Info.plist */,
+				52E1CE061EE4AC8D00467DFC /* ViewController.swift */,
 			);
 			path = Sunnybrook_Updated;
 			sourceTree = "<group>";
@@ -106,6 +119,7 @@
 			children = (
 				52C8E78E1EE4AC00005DBED2 /* SurveyTask.swift */,
 				52C8E78F1EE4AC00005DBED2 /* SurveyView.swift */,
+				52E1CE091EE4B67D00467DFC /* parse.swift */,
 			);
 			name = Survey;
 			sourceTree = "<group>";
@@ -244,11 +258,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C8E7911EE4AC00005DBED2 /* SurveyView.swift in Sources */,
+				52E1CE0A1EE4B67D00467DFC /* parse.swift in Sources */,
 				52C8E78B1EE4ABE6005DBED2 /* Dash_v2ViewController.swift in Sources */,
 				52C8E7901EE4AC00005DBED2 /* SurveyTask.swift in Sources */,
 				52C8E78C1EE4ABE6005DBED2 /* SunnybrookTabBarController.swift in Sources */,
 				52E1CE071EE4AC8D00467DFC /* ViewController.swift in Sources */,
 				52C8E78D1EE4ABE6005DBED2 /* DataSource.swift in Sources */,
+				521EAF221EEACC0300FE2B12 /* sqlFunction.swift in Sources */,
 				52C8E7741EE4AA96005DBED2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 25W8SY99Z3;
 				INFOPLIST_FILE = Sunnybrook_Updated/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SRI.Sunnybrook-Updated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +398,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 25W8SY99Z3;
 				INFOPLIST_FILE = Sunnybrook_Updated/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SRI.Sunnybrook-Updated";
 				PRODUCT_NAME = "$(TARGET_NAME)";

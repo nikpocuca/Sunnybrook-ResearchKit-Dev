@@ -15,6 +15,10 @@ public class Dash_v2: UIViewController, ORKPieChartViewDataSource {
 
     
     
+    @IBAction func update(_ sender: Any) {
+        
+        get()
+    }
     
     
     // survey button
