@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,30 +22,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4leaf" translatesAutoresizingMaskIntoConstraints="NO" id="bjk-Cf-KOn">
-                                <rect key="frame" x="74" y="179" width="227" height="224"/>
+                                <rect key="frame" x="71" y="150" width="233" height="232"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <edgeInsets key="layoutMargins" top="8" left="25" bottom="8" right="8"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="Gqy-D8-Nfp">
-                                <rect key="frame" x="39" y="53" width="296" height="100"/>
+                                <rect key="frame" x="39" y="28" width="296" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mitylogov2" highlightedImage="mitylogov2" translatesAutoresizingMaskIntoConstraints="NO" id="U9W-NG-stP">
+                                <rect key="frame" x="32" y="411" width="311" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeS-6s-TYo">
-                                <rect key="frame" x="117" y="567" width="141" height="37"/>
+                                <rect key="frame" x="117" y="531" width="141" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Join Study">
+                                <state key="normal" title="Login ">
                                     <color key="titleColor" red="0.0" green="0.46666666666666667" blue="0.97966671043417364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="EZK-Aq-wYw" kind="show" id="fQK-5k-zrz"/>
+                                    <segue destination="6Yq-RY-gDX" kind="show" id="JGa-Dp-aGr"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mitylogov2" highlightedImage="mitylogov2" translatesAutoresizingMaskIntoConstraints="NO" id="U9W-NG-stP">
-                                <rect key="frame" x="39" y="424" width="311" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -55,7 +55,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="-735.20000000000005" y="122.78860569715144"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="IgM-7D-xGP">
+            <objects>
+                <viewController id="6Yq-RY-gDX" customClass="LoginViewController" customModule="Sunnybrook_Updated" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DkR-aA-hR4"/>
+                        <viewControllerLayoutGuide type="bottom" id="kzl-nf-lru"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rrv-af-Sx2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="qX1-rC-DX6">
+                                <rect key="frame" x="39" y="28" width="296" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4leaf" translatesAutoresizingMaskIntoConstraints="NO" id="6t2-0c-Z3o">
+                                <rect key="frame" x="59" y="136" width="256" height="247"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <edgeInsets key="layoutMargins" top="8" left="25" bottom="8" right="8"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="head2" translatesAutoresizingMaskIntoConstraints="NO" id="Lez-nN-qc7">
+                                <rect key="frame" x="44" y="391" width="53" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K5J-Ls-wlR">
+                                <rect key="frame" x="105" y="409" width="225" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="xaG-iR-Kof">
+                                <rect key="frame" x="52" y="463" width="36" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="j3V-QP-Ldv">
+                                <rect key="frame" x="105" y="474" width="225" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sr3-Yk-Sz3">
+                                <rect key="frame" x="117" y="531" width="141" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login ">
+                                    <color key="titleColor" red="0.0" green="0.46666666670000001" blue="0.97966671039999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EZK-Aq-wYw" kind="show" id="OEm-D2-hWR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="user" destination="K5J-Ls-wlR" id="OrP-pW-yd1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1W-mb-KJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103.2" y="122.78860569715144"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="4Vi-cf-SiX">
@@ -69,11 +135,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oxt-s9-5Ya" customClass="ORKPieChartView">
-                                <rect key="frame" x="76" y="154" width="223" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <tabBar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sum-1l-wvP">
                                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -83,8 +144,13 @@
                                     <tabBarItem title="Review" image="review" id="AhT-K4-Uby"/>
                                 </items>
                             </tabBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oxt-s9-5Ya" customClass="ORKPieChartView">
+                                <rect key="frame" x="71" y="67" width="233" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26E-HG-RZh" customClass="FaveButton" customModule="FaveButton">
-                                <rect key="frame" x="135" y="468" width="106" height="106"/>
+                                <rect key="frame" x="134" y="431" width="106" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="red"/>
                                 <connections>
@@ -94,14 +160,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="dash-1" selectedImage="dash-1" id="98q-ou-GXF"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="chart" selectedImage="chart" id="98q-ou-GXF"/>
                     <connections>
                         <outlet property="pieChartView" destination="Oxt-s9-5Ya" id="eHU-Gc-5uP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGi-oY-gqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757.5999999999999" y="-572.56371814092961"/>
+            <point key="canvasLocation" x="1982" y="-578"/>
         </scene>
         <!--Sunnybrook Tab Bar Controller-->
         <scene sceneID="Yhp-hm-ncn">
@@ -117,6 +183,7 @@
                     <connections>
                         <segue destination="bai-4f-V8R" kind="relationship" relationship="viewControllers" id="on8-ZU-oSk"/>
                         <segue destination="QKc-L6-mIc" kind="relationship" relationship="viewControllers" id="sCC-Vn-bls"/>
+                        <segue destination="sdB-1I-Dio" kind="relationship" relationship="viewControllers" id="ozm-14-hxp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgl-QE-NMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -143,20 +210,69 @@
                                     <tabBarItem systemItem="favorites" id="vDS-HU-ESm"/>
                                 </items>
                             </tabBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mox-RW-Bhc">
-                                <rect key="frame" x="0.0" y="28" width="375" height="590"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3B1-Kp-RPq">
+                                <rect key="frame" x="0.0" y="113" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3B1-Kp-RPq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                    <state key="normal" title="Survey"/>
-                                    <connections>
-                                        <action selector="survey_tap:" destination="QKc-L6-mIc" eventType="touchDown" id="7ht-4P-XQR"/>
-                                    </connections>
-                                </button>
-                            </tableView>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Survey"/>
+                                <connections>
+                                    <action selector="survey_tap:" destination="QKc-L6-mIc" eventType="touchDown" id="WfE-nO-e9U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-8x-HEa">
+                                <rect key="frame" x="0.0" y="61" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Consent"/>
+                                <connections>
+                                    <action selector="consent_tap:" destination="QKc-L6-mIc" eventType="touchDown" id="OeI-qJ-TVP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fju-59-QxY">
+                                <rect key="frame" x="12" y="165" width="351" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Image Survey"/>
+                                <connections>
+                                    <action selector="imageSurvey_tap:" destination="QKc-L6-mIc" eventType="touchDown" id="J1K-FY-6Mp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7i-C5-vj1">
+                                <rect key="frame" x="16" y="215" width="343" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Spacial Memory Task"/>
+                                <connections>
+                                    <action selector="walk_tap:" destination="QKc-L6-mIc" eventType="touchDown" id="wWK-lK-U9M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkB-HZ-jTq">
+                                <rect key="frame" x="16" y="262" width="343" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="IPAQ"/>
+                                <connections>
+                                    <action selector="ipaq_tap:" destination="QKc-L6-mIc" eventType="touchDown" id="WOb-vi-nqS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL2-5B-OAS">
+                                <rect key="frame" x="16" y="307" width="343" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Tower of Hanoi"/>
+                                <connections>
+                                    <action selector="toh_tap:" destination="QKc-L6-mIc" eventType="touchDown" id="9Lu-H1-Vk4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-jP-Gu2">
+                                <rect key="frame" x="16" y="353" width="343" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Tapping Task"/>
+                                <connections>
+                                    <action selector="tap_tap:" destination="QKc-L6-mIc" eventType="touchDown" id="nNL-0v-kzP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -164,17 +280,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aQ-WI-4bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911.2" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1950" y="141"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="RUs-KI-dmA">
+            <objects>
+                <viewController id="sdB-1I-Dio" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aHV-kX-3BX"/>
+                        <viewControllerLayoutGuide type="bottom" id="5NI-Xs-NsU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VHt-ai-mbc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAY-8Q-Gn6">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Profile" image="rhombus_s" id="9E9-dm-WIY"/>
+                                </items>
+                            </tabBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile_2" translatesAutoresizingMaskIntoConstraints="NO" id="mSA-Yu-Vnh">
+                                <rect key="frame" x="99" y="106" width="176" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Administrator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lev-Ob-k4k">
+                                <rect key="frame" x="16" y="309" width="343" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="eGR-GO-MtQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08a-KP-Bp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.8" y="913.49325337331345"/>
         </scene>
     </scenes>
     <resources>
         <image name="4leaf" width="900" height="900"/>
         <image name="activities-1" width="25" height="25"/>
         <image name="activities-2" width="32" height="32"/>
-        <image name="dash-1" width="35" height="35"/>
+        <image name="chart" width="35" height="35"/>
+        <image name="head2" width="50" height="50"/>
+        <image name="lock" width="40" height="40"/>
         <image name="mitylogov2" width="296" height="90"/>
+        <image name="profile" width="35" height="35"/>
+        <image name="profile_2" width="512" height="512"/>
         <image name="red" width="106" height="106"/>
         <image name="review" width="25" height="25"/>
+        <image name="rhombus_s" width="35" height="35"/>
         <image name="title" width="561" height="179"/>
     </resources>
 </document>

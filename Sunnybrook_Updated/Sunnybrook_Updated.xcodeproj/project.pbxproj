@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520F77FE1EFAB81500318EA0 /* userDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F77FD1EFAB81500318EA0 /* userDataModel.swift */; };
+		520F78011EFABB9000318EA0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F78001EFABB9000318EA0 /* LoginViewController.swift */; };
 		521EAF221EEACC0300FE2B12 /* sqlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521EAF211EEACC0300FE2B12 /* sqlFunction.swift */; };
+		5241E9511EEEFB29000427EB /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9501EEEFB29000427EB /* ConsentTask.swift */; };
+		5241E9531EEF01AD000427EB /* ImageSurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9521EEF01AD000427EB /* ImageSurveyTask.swift */; };
+		5241E9581EF1720C000427EB /* SpacialTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9571EF1720C000427EB /* SpacialTask.swift */; };
+		5241E95A1EF172C2000427EB /* ipaqTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9591EF172C2000427EB /* ipaqTask.swift */; };
+		5241E95C1EF17660000427EB /* tappingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E95B1EF17660000427EB /* tappingTask.swift */; };
+		5241E95E1EF1782C000427EB /* TOHTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E95D1EF1782C000427EB /* TOHTask.swift */; };
 		52C8E7741EE4AA96005DBED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8E7731EE4AA96005DBED2 /* AppDelegate.swift */; };
 		52C8E77B1EE4AA96005DBED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C8E77A1EE4AA96005DBED2 /* Assets.xcassets */; };
 		52C8E77E1EE4AA96005DBED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C8E77C1EE4AA96005DBED2 /* LaunchScreen.storyboard */; };
@@ -24,7 +32,15 @@
 
 /* Begin PBXFileReference section */
 		00C77FAE6108534D4BDD5F58 /* Pods-Sunnybrook_Updated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sunnybrook_Updated.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sunnybrook_Updated/Pods-Sunnybrook_Updated.release.xcconfig"; sourceTree = "<group>"; };
+		520F77FD1EFAB81500318EA0 /* userDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDataModel.swift; sourceTree = "<group>"; };
+		520F78001EFABB9000318EA0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		521EAF211EEACC0300FE2B12 /* sqlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sqlFunction.swift; sourceTree = "<group>"; };
+		5241E9501EEEFB29000427EB /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		5241E9521EEF01AD000427EB /* ImageSurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSurveyTask.swift; sourceTree = "<group>"; };
+		5241E9571EF1720C000427EB /* SpacialTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpacialTask.swift; sourceTree = "<group>"; };
+		5241E9591EF172C2000427EB /* ipaqTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ipaqTask.swift; sourceTree = "<group>"; };
+		5241E95B1EF17660000427EB /* tappingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tappingTask.swift; sourceTree = "<group>"; };
+		5241E95D1EF1782C000427EB /* TOHTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOHTask.swift; sourceTree = "<group>"; };
 		52C8E7701EE4AA96005DBED2 /* Sunnybrook_Updated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunnybrook_Updated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8E7731EE4AA96005DBED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C8E77A1EE4AA96005DBED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +78,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		520F77FF1EFABB6E00318EA0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				520F77FD1EFAB81500318EA0 /* userDataModel.swift */,
+				520F78001EFABB9000318EA0 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		521EAF201EEACBE800FE2B12 /* SQL */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +119,9 @@
 				52C8E7731EE4AA96005DBED2 /* AppDelegate.swift */,
 				52E1CE011EE4AC5B00467DFC /* Main.storyboard */,
 				52C8E77A1EE4AA96005DBED2 /* Assets.xcassets */,
+				520F77FF1EFABB6E00318EA0 /* Login */,
 				521EAF201EEACBE800FE2B12 /* SQL */,
-				52C8E7921EE4AC05005DBED2 /* Survey */,
+				52C8E7921EE4AC05005DBED2 /* Tasks */,
 				52C8E7871EE4ABD8005DBED2 /* DashBoard */,
 				52C8E77C1EE4AA96005DBED2 /* LaunchScreen.storyboard */,
 				52C8E77F1EE4AA96005DBED2 /* Info.plist */,
@@ -114,14 +140,20 @@
 			name = DashBoard;
 			sourceTree = "<group>";
 		};
-		52C8E7921EE4AC05005DBED2 /* Survey */ = {
+		52C8E7921EE4AC05005DBED2 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
 				52C8E78E1EE4AC00005DBED2 /* SurveyTask.swift */,
+				5241E9501EEEFB29000427EB /* ConsentTask.swift */,
 				52C8E78F1EE4AC00005DBED2 /* SurveyView.swift */,
+				5241E95B1EF17660000427EB /* tappingTask.swift */,
+				5241E9591EF172C2000427EB /* ipaqTask.swift */,
+				5241E9521EEF01AD000427EB /* ImageSurveyTask.swift */,
+				5241E95D1EF1782C000427EB /* TOHTask.swift */,
+				5241E9571EF1720C000427EB /* SpacialTask.swift */,
 				52E1CE091EE4B67D00467DFC /* parse.swift */,
 			);
-			name = Survey;
+			name = Tasks;
 			sourceTree = "<group>";
 		};
 		D1EEAA4FF3A15EB89D64D237 /* Pods */ = {
@@ -259,13 +291,21 @@
 			files = (
 				52C8E7911EE4AC00005DBED2 /* SurveyView.swift in Sources */,
 				52E1CE0A1EE4B67D00467DFC /* parse.swift in Sources */,
+				5241E95C1EF17660000427EB /* tappingTask.swift in Sources */,
 				52C8E78B1EE4ABE6005DBED2 /* Dash_v2ViewController.swift in Sources */,
+				5241E95E1EF1782C000427EB /* TOHTask.swift in Sources */,
+				5241E9531EEF01AD000427EB /* ImageSurveyTask.swift in Sources */,
+				5241E9581EF1720C000427EB /* SpacialTask.swift in Sources */,
 				52C8E7901EE4AC00005DBED2 /* SurveyTask.swift in Sources */,
+				520F77FE1EFAB81500318EA0 /* userDataModel.swift in Sources */,
 				52C8E78C1EE4ABE6005DBED2 /* SunnybrookTabBarController.swift in Sources */,
 				52E1CE071EE4AC8D00467DFC /* ViewController.swift in Sources */,
 				52C8E78D1EE4ABE6005DBED2 /* DataSource.swift in Sources */,
+				5241E9511EEEFB29000427EB /* ConsentTask.swift in Sources */,
+				520F78011EFABB9000318EA0 /* LoginViewController.swift in Sources */,
 				521EAF221EEACC0300FE2B12 /* sqlFunction.swift in Sources */,
 				52C8E7741EE4AA96005DBED2 /* AppDelegate.swift in Sources */,
+				5241E95A1EF172C2000427EB /* ipaqTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

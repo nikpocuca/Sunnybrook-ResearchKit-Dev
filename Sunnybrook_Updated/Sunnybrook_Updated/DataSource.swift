@@ -23,12 +23,15 @@ public class DataSource: NSObject {
     
 
     
- public var perCent: CGFloat
+    public var perCent: CGFloat
     public var Score: Int
+    public var serverString: String
+    
     
    override init() {
     perCent = 0;
     Score = 0 ;
+    serverString = "http://142.76.187.37:8888";
     }
     
        

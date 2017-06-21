@@ -9,8 +9,16 @@ import UIKit
 
 public func sqlFunction(id: Int, Name: String, score: Int) {
     
+    
     // POST REQUEST Only, see php file for web service.
-    var request = URLRequest(url: URL(string: "http://localhost:8888/talk.php")!)
+    
+    let loci = "http://142.76.191.73:8888/"
+    let appended =  loci + "talk.php"
+    
+    
+    var request = URLRequest(url: URL(string: appended)!)
+    
+    
     request.httpMethod = "POST"
     
     
@@ -46,8 +54,12 @@ public func sqlFunction(id: Int, Name: String, score: Int) {
 
 public func get() {
     
+    let loci = "http://142.76.191.73:8888/"
+    let appended =  loci + "service.php"
     
-    guard let url = URL(string: "http://localhost:8888/service.php") else {return }
+    
+    
+    guard let url = URL(string: appended) else {return }
     
     let session = URLSession.shared
     

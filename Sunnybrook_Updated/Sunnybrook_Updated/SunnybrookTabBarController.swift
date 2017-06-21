@@ -10,14 +10,19 @@ import Foundation
 import UIKit
 
 
-class SunnybrookTabBarController: UITabBarController {
+public class SunnybrookTabBarController: UITabBarController {
     
-    var dataCounter = DataSource()
-    let bord_c : UIColor = UIColor.init(red: 125, green: 66, blue: 244, alpha: 1)
+  public var dataCounter = DataSource()
+    
+  public var loginData = userModel()
     
     
     
-    override func viewDidLoad(){
+  public  let bord_c : UIColor = UIColor.init(red: 125, green: 66, blue: 244, alpha: 1)
+    
+    
+    
+    override public func viewDidLoad(){
         self.tabBar.tintColor = UIColor.blue
         
     }

@@ -12,9 +12,9 @@ import ResearchKit
 
 public class Dash_v2: UIViewController, ORKPieChartViewDataSource {
     
-
+ 
     
-    
+  
     @IBAction func update(_ sender: Any) {
         
         get()
@@ -64,9 +64,9 @@ public class Dash_v2: UIViewController, ORKPieChartViewDataSource {
         
         
         // format pieChartViews.
-        pieChartView.title = NSLocalizedString("MiTy Kids Progress", comment:"")
+        //pieChartView.title = NSLocalizedString("MiTy Kids Progress", comment:"")
         pieChartView.titleColor = UIColor.blue
-        pieChartView.showsTitleAboveChart = true
+       // pieChartView.showsTitleAboveChart = true
         //declare datasource for pieChart.
         pieChartView.dataSource = self
 
