@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		520F77FE1EFAB81500318EA0 /* userDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F77FD1EFAB81500318EA0 /* userDataModel.swift */; };
 		520F78011EFABB9000318EA0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F78001EFABB9000318EA0 /* LoginViewController.swift */; };
+		520F78031EFBFE0F00318EA0 /* SQLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F78021EFBFE0F00318EA0 /* SQLViewController.swift */; };
 		521EAF221EEACC0300FE2B12 /* sqlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521EAF211EEACC0300FE2B12 /* sqlFunction.swift */; };
 		5241E9511EEEFB29000427EB /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9501EEEFB29000427EB /* ConsentTask.swift */; };
 		5241E9531EEF01AD000427EB /* ImageSurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9521EEF01AD000427EB /* ImageSurveyTask.swift */; };
@@ -34,6 +35,7 @@
 		00C77FAE6108534D4BDD5F58 /* Pods-Sunnybrook_Updated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sunnybrook_Updated.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sunnybrook_Updated/Pods-Sunnybrook_Updated.release.xcconfig"; sourceTree = "<group>"; };
 		520F77FD1EFAB81500318EA0 /* userDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDataModel.swift; sourceTree = "<group>"; };
 		520F78001EFABB9000318EA0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		520F78021EFBFE0F00318EA0 /* SQLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLViewController.swift; sourceTree = "<group>"; };
 		521EAF211EEACC0300FE2B12 /* sqlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sqlFunction.swift; sourceTree = "<group>"; };
 		5241E9501EEEFB29000427EB /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		5241E9521EEF01AD000427EB /* ImageSurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSurveyTask.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				521EAF211EEACC0300FE2B12 /* sqlFunction.swift */,
+				520F78021EFBFE0F00318EA0 /* SQLViewController.swift */,
 			);
 			name = SQL;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C8E7911EE4AC00005DBED2 /* SurveyView.swift in Sources */,
+				520F78031EFBFE0F00318EA0 /* SQLViewController.swift in Sources */,
 				52E1CE0A1EE4B67D00467DFC /* parse.swift in Sources */,
 				5241E95C1EF17660000427EB /* tappingTask.swift in Sources */,
 				52C8E78B1EE4ABE6005DBED2 /* Dash_v2ViewController.swift in Sources */,

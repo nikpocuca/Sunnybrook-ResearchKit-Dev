@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FaveButton.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Sunnybrook_Updated.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>16E8E3916DD46D7023F086B8A727BF57</key>
+		<key>768A86B14E7FECCDFAB548711D3529F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C08227B6E14D87F0F5B0FD6DFFA1A3E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E63697A9D7E761955D8B7992885E8CFC</key>
+		<key>A4394AA0547FA9C704C32BFD7BA80CDB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

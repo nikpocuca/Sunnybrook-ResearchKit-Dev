@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let bord_c : UIColor = UIColor.init(red: 0, green: 119, blue: 250, alpha: 1)
+        let bord_c : UIColor = UIColor.init(red: 0, green: 0, blue: 250, alpha: 1)
         
         join_2.layer.cornerRadius = 4
         join_2.layer.borderWidth = 2

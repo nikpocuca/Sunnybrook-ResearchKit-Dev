@@ -6,8 +6,6 @@ target 'Sunnybrook_Updated' do
   use_frameworks!
 
 pod "ResearchKit"
-pod "FaveButton"
-
 
   # Pods for Sunnybrook_Updated
 

@@ -6,13 +6,13 @@ import UIKit
 
 
 
-
+// post function
 public func sqlFunction(id: Int, Name: String, score: Int) {
     
     
     // POST REQUEST Only, see php file for web service.
     
-    let loci = "http://142.76.191.73:8888/"
+    let loci = "http://142.76.15.107/"
     let appended =  loci + "talk.php"
     
     
@@ -46,15 +46,85 @@ public func sqlFunction(id: Int, Name: String, score: Int) {
     task.resume()
 }
 
+// Query Function allows for both select, insert and etc. A direct communication to the server via sql.
+public func sqlQuery(qString: String){
+    
+    let ipLoci = "http://142.76.15.107/query.php"
+    
+    var request = URLRequest(url: URL(string: ipLoci)!)
+    request.httpMethod = "POST"
+    
+    let postString = "\(qString)"
+    request.httpBody = postString.data(using: .utf8)!
+    
+    let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        if let data = data{
+            do{
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                print(json)
+                
+            } catch {
+                print(error)
+            }
+        }
+        if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+            print("statusCode should be 200, but is \(httpStatus.statusCode)")
+            print("response = \(response)")
+        }
+        
+        let responseString = String(data: data!, encoding: .utf8)
+        print("responseString = \(responseString)")
+    }
+    task.resume()
+    //end of task line
 
-
+    
+    
+    //begin retrieval of data
+    guard let url = URL(string: ipLoci) else {return }
+    let session = URLSession.shared
+    session.dataTask(with: url) { (data, response, error) in
+        if let reponse = response {
+            print(reponse)
+        }
+        if let data = data {
+            //print(data)
+            
+            do{
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                print(json)
+                
+                
+                
+                
+                
+            } catch {
+                print(error)
+            }
+            
+            
+            
+            
+        }
+        
+        
+        
+        }.resume()
+    
+    
+    
+    
+    
+    
+    
+}
 
 
 
 
 public func get() {
     
-    let loci = "http://142.76.191.73:8888/"
+    let loci = "http://142.76.15.107/"
     let appended =  loci + "service.php"
     
     
