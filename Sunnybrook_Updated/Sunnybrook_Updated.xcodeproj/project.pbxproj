@@ -10,8 +10,9 @@
 		520F77FE1EFAB81500318EA0 /* userDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F77FD1EFAB81500318EA0 /* userDataModel.swift */; };
 		520F78011EFABB9000318EA0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F78001EFABB9000318EA0 /* LoginViewController.swift */; };
 		520F78031EFBFE0F00318EA0 /* SQLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F78021EFBFE0F00318EA0 /* SQLViewController.swift */; };
+		521493FB1F042DB500CDD8DB /* loopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521493FA1F042DB500CDD8DB /* loopable.swift */; };
+		521493FE1F05570500CDD8DB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521493FD1F05570500CDD8DB /* ProfileViewController.swift */; };
 		521EAF221EEACC0300FE2B12 /* sqlFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521EAF211EEACC0300FE2B12 /* sqlFunction.swift */; };
-		5241E9511EEEFB29000427EB /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9501EEEFB29000427EB /* ConsentTask.swift */; };
 		5241E9531EEF01AD000427EB /* ImageSurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9521EEF01AD000427EB /* ImageSurveyTask.swift */; };
 		5241E9581EF1720C000427EB /* SpacialTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9571EF1720C000427EB /* SpacialTask.swift */; };
 		5241E95A1EF172C2000427EB /* ipaqTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241E9591EF172C2000427EB /* ipaqTask.swift */; };
@@ -36,8 +37,9 @@
 		520F77FD1EFAB81500318EA0 /* userDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDataModel.swift; sourceTree = "<group>"; };
 		520F78001EFABB9000318EA0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		520F78021EFBFE0F00318EA0 /* SQLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLViewController.swift; sourceTree = "<group>"; };
+		521493FA1F042DB500CDD8DB /* loopable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loopable.swift; sourceTree = "<group>"; };
+		521493FD1F05570500CDD8DB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		521EAF211EEACC0300FE2B12 /* sqlFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sqlFunction.swift; sourceTree = "<group>"; };
-		5241E9501EEEFB29000427EB /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		5241E9521EEF01AD000427EB /* ImageSurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSurveyTask.swift; sourceTree = "<group>"; };
 		5241E9571EF1720C000427EB /* SpacialTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpacialTask.swift; sourceTree = "<group>"; };
 		5241E9591EF172C2000427EB /* ipaqTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ipaqTask.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		521493FC1F042DC400CDD8DB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				521493FA1F042DB500CDD8DB /* loopable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		521EAF201EEACBE800FE2B12 /* SQL */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 				52C8E7731EE4AA96005DBED2 /* AppDelegate.swift */,
 				52E1CE011EE4AC5B00467DFC /* Main.storyboard */,
 				52C8E77A1EE4AA96005DBED2 /* Assets.xcassets */,
+				521493FC1F042DC400CDD8DB /* Protocols */,
 				520F77FF1EFABB6E00318EA0 /* Login */,
 				521EAF201EEACBE800FE2B12 /* SQL */,
 				52C8E7921EE4AC05005DBED2 /* Tasks */,
@@ -138,6 +149,7 @@
 			children = (
 				52C8E7881EE4ABE6005DBED2 /* Dash_v2ViewController.swift */,
 				52C8E7891EE4ABE6005DBED2 /* SunnybrookTabBarController.swift */,
+				521493FD1F05570500CDD8DB /* ProfileViewController.swift */,
 				52C8E78A1EE4ABE6005DBED2 /* DataSource.swift */,
 			);
 			name = DashBoard;
@@ -147,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				52C8E78E1EE4AC00005DBED2 /* SurveyTask.swift */,
-				5241E9501EEEFB29000427EB /* ConsentTask.swift */,
 				52C8E78F1EE4AC00005DBED2 /* SurveyView.swift */,
 				5241E95B1EF17660000427EB /* tappingTask.swift */,
 				5241E9591EF172C2000427EB /* ipaqTask.swift */,
@@ -294,6 +305,7 @@
 			files = (
 				52C8E7911EE4AC00005DBED2 /* SurveyView.swift in Sources */,
 				520F78031EFBFE0F00318EA0 /* SQLViewController.swift in Sources */,
+				521493FE1F05570500CDD8DB /* ProfileViewController.swift in Sources */,
 				52E1CE0A1EE4B67D00467DFC /* parse.swift in Sources */,
 				5241E95C1EF17660000427EB /* tappingTask.swift in Sources */,
 				52C8E78B1EE4ABE6005DBED2 /* Dash_v2ViewController.swift in Sources */,
@@ -305,7 +317,7 @@
 				52C8E78C1EE4ABE6005DBED2 /* SunnybrookTabBarController.swift in Sources */,
 				52E1CE071EE4AC8D00467DFC /* ViewController.swift in Sources */,
 				52C8E78D1EE4ABE6005DBED2 /* DataSource.swift in Sources */,
-				5241E9511EEEFB29000427EB /* ConsentTask.swift in Sources */,
+				521493FB1F042DB500CDD8DB /* loopable.swift in Sources */,
 				520F78011EFABB9000318EA0 /* LoginViewController.swift in Sources */,
 				521EAF221EEACC0300FE2B12 /* sqlFunction.swift in Sources */,
 				52C8E7741EE4AA96005DBED2 /* AppDelegate.swift in Sources */,

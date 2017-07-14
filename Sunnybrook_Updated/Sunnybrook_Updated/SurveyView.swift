@@ -29,6 +29,12 @@ class Survey: UIViewController {
         // load in data from tabBarController
         let tbvc = self.tabBarController as! SunnybrookTabBarController
         tbvc.dataCounter.perCent += 34
+        
+        let loginData = tbvc.loginData
+        // create here update function.
+        
+        
+        
     }
 
     
@@ -38,12 +44,56 @@ class Survey: UIViewController {
     
     
     @IBAction func consent_tap(_ sender: Any) {
-  
-        let taskViewController = ORKTaskViewController(task: ConsentTask, taskRun: nil)
+        
+        consentDocument.title = NSLocalizedString("Sunnybrook Health Study Consent Form", comment: "")
+        
+        
+        let section1 = ORKConsentSection(type: .overview)
+        section1.summary = NSLocalizedString("Overview for Mity Kids Trial - Type 2 Diabetes", comment: "Participation in this study is voluntary")
+        section1.content = NSLocalizedString("You have been asked to take part in this trial because you have participated in the Mity trial. There is some evidence that children of mothers with diabetes have a higher than average chance of developing diabetes themselves, and having risk factors for herat disease.", comment: "")
+        
+        
+        
+        let section2 = ORKConsentSection(type: .dataGathering)
+        section2.summary = NSLocalizedString("Data Gathering", comment: "")
+        section2.content = NSLocalizedString("Various measurements will be taken, weight, length, skinfolds, head and waist circumferences.", comment: "")
+        
+        
+        let section3 = ORKConsentSection(type: .privacy)
+        section3.summary = NSLocalizedString("Confidentiality: Personal Health Information", comment: "")
+        section3.content = NSLocalizedString("If you agree to join this study, the doctor and his/her study team will look at your personal health information and collect only the information they need for the study. Personal health information that could be used to identify you includes your name, address, date of birth, and new or existing medical records at this hospital.", comment: "")
+        
+        consentDocument.sections = [section1, section2, section3]
+        
+        
+        let signature = ORKConsentSignature(forPersonWithTitle: "Participant", dateFormatString: nil, identifier: "ConsentDocumentParticipantSignature")
+        consentDocument.addSignature(signature)
+        
+        
+        let consentStep = ORKVisualConsentStep(identifier: "VisualConsentStep", document: consentDocument)
+        
+        let reviewConsentStep = ORKConsentReviewStep(identifier: ConsentReviewStepIdentifier, signature: signature, in: consentDocument)
+        
+        let passcodeStep = ORKPasscodeStep(identifier: "Passcode")
+        passcodeStep.text = "Now you will create a passcode to identifiy yourself to the app and protect access to the information you've entered"
+        
+        let completionStep = ORKCompletionStep(identifier: "CompletionStep")
+        completionStep.title = NSLocalizedString("Welcome aboard.", comment: "")
+        completionStep.text = NSLocalizedString("Thank you for joining this study.", comment: "")
+        
+        
+        let fullsteps = [consentStep,reviewConsentStep,passcodeStep,completionStep]
+        
+        
+        let orderedTask = ORKOrderedTask(identifier: "Join", steps: fullsteps)
+        
+        
+        let taskViewController = ORKTaskViewController(task: orderedTask, taskRun: nil)
         taskViewController.delegate = self
         
-        
         present(taskViewController, animated: true, completion: nil)
+        
+        
         
         // load in data from tabBarController
         let tbvc = self.tabBarController as! SunnybrookTabBarController
@@ -177,24 +227,30 @@ extension Survey : ORKTaskViewControllerDelegate {
         var scored_data = Scorer(input: parsed_data, Method: method)
         
         
-        print(parsed_data)
-        print(scored_data)
+       // print(parsed_data)
+        //print(scored_data)
         
         let tbvc = self.tabBarController as! SunnybrookTabBarController
 
-        let tabData = tbvc.loginData
+        var tabData = tbvc.loginData
+    
         
-        print(tabData.id)
-        print(tabData.login)
+        tabData.surveyScore = scored_data
+        tabData.update()
+        print(tabData.items)
+
+        
+        tabData = sqlUpdate(model: tabData)
+        
+       // print(tabData.items)
         
         
-        
-        sqlFunction(id: tabData.id , Name: tabData.login, score: scored_data)
+      //  sqlFunction(id: tabData.id , Name: tabData.login, score: scored_data)
         
         
         
 
-        /*
+        
         switch reason {
         case .completed:
             let result = taskViewController.result
@@ -220,7 +276,7 @@ extension Survey : ORKTaskViewControllerDelegate {
             break
         }
         
-        */
+        
         
         
         

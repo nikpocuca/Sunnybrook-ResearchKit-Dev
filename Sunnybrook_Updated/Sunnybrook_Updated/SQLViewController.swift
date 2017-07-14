@@ -23,19 +23,13 @@ class SQLViewController: UIViewController {
     
     
     @IBAction func Query(_ sender: Any) {
-        
-        // Place SQL code here. Import whatever was in the textfield. 
-    let input = sqlText.text!
-    
-    sqlQuery(qString: input)
-    
-        
-        
+
+    sqlQuery(qOutlet: sqlText)
         
     }
     
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -61,7 +61,7 @@ public class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override public func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         loginData.login = user.text!
-    
+        loginData.pass = passTextField.text!
         
         var tabBar: SunnybrookTabBarController = segue.destination as! SunnybrookTabBarController
         

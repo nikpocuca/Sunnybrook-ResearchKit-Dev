@@ -13,13 +13,33 @@ import ResearchKit
 public class Dash_v2: UIViewController, ORKPieChartViewDataSource {
     
  
+    @IBOutlet weak var loaded: UITextField!
     
   
     @IBAction func update(_ sender: Any) {
+        let tbvc = self.tabBarController as! SunnybrookTabBarController
         
-        get()
+        var loginData = tbvc.loginData
+        
+        
+        let login = loginData.login
+        let pass = loginData.pass
+        
+        loginData = sqlAccount(login: login, pass: pass, model: loginData)
+        
+        
     }
     
+    
+    @IBAction func check(_ sender: Any) {
+        let tbvc = self.tabBarController as! SunnybrookTabBarController
+        
+        var loginData = tbvc.loginData
+        
+        
+        print("Model after is \(loginData.id)")
+        
+    }
     
     // survey button
     @IBOutlet weak var survey_b: UIButton!
